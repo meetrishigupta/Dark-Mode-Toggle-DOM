@@ -1,19 +1,30 @@
 "use strict";
 
-const functiondark = function () {
-  const checkbox = document.getElementById("checkbox");
-  var check = checkbox.addEventListener("change", () => {
-    document.body.classList.toggle("dark");
-  });
-};
+// const functiondark = function () {
+//   const checkbox = document.getElementById("checkbox");
+//   checkbox.addEventListener("click", () => {
+//     document.body.classList.toggle("dark");
+//     var headingdark = document.querySelector(".heading");
 
-functiondark();
+//     if (document.body.classList.contains("dark")) {
+//       headingdark.innerHTML = "changed";
+//     } else {
+//       headingdark.innerHTML = "not changed";
+//     }
+//     console.log(headingdark);
+//   });
+// };
 
-const changetext = document.getElementsByClassName("heading");
-changetext.innerHTML = "changed";
+// functiondark();
 
-// if (headingdark[0] == "changed") {
-// } else {
-//   var headingdark = document.getElementsByTagName("h1");
-//   headingdark[0].innerHTML = "changed";
-// }
+function darkMode(){
+  document.body.classList.toggle("dark");
+    var headingdark = document.querySelector(".heading");
+
+    if (document.body.classList.contains("dark")) {
+      headingdark.innerHTML = "Dark Mode 🌙";
+    } else {
+      headingdark.innerHTML = "Light Mode ☀️";
+    }
+    console.log(headingdark);
+}
