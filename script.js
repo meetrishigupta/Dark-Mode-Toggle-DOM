@@ -6,7 +6,11 @@ const functiondark = function () {
     document.body.classList.toggle("dark");
   });
 };
+
 functiondark();
+
+const changetext = document.getElementsByClassName("heading");
+changetext.innerHTML = "changed";
 
 // if (headingdark[0] == "changed") {
 // } else {
